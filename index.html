@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Recipe Card</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="recipe-card">
+
+        <h1 class="recipe title">TIRAMISU RECIPE</h1>
+        <img src="tiramisu.jpg" alt="Tiramisu illustration" class="recipe-image">
+
+        <div class="prep-info">
+        <p>30 minutes (plus 4–6 hours chilling in the fridge for best flavor and texture)</p>
+        <p>🍽 Servings: 8</p>
+        <div class="progress-bar">
+            <div class="progress-fill"></div>
+        </div>
+    </div>
+
+         <button class="toggle-btn" onclick="toggleIngredients()">Show Ingredients</button>
+    <ul class="ingredients hidden">
+        <li>6 egg yolks</li>
+        <li>3/4 cup granulated sugar</li>
+        <li>2/3 cup milk</li>
+        <li>1 1/4 cups heavy cream</li>
+        <li>1/2 tsp vanilla extract</li>
+        <li>8 oz mascarpone cheese</li>
+        <li>1 cup strong brewed coffee, cooled</li>
+        <li>2 tbsp coffee liqueur (optional)</li>
+        <li>24 ladyfinger biscuits</li>
+        <li>2 tbsp cocoa powder (for dusting)</li>
+    </ul>
+
+    <button class="toggle-btn" onclick="toggleSteps()">Show Steps</button>
+    <ol class="steps hidden">
+        <li>In a saucepan, whisk egg yolks and sugar until well blended.</li>
+        <li>Add milk and cook over medium heat, stirring constantly, until mixture boils; boil gently for 1 minute.</li>
+        <li>Remove from heat, cover, and chill in the fridge for 1 hour.</li>
+        <li>Whip heavy cream with vanilla until stiff peaks form.</li>
+        <li>In a bowl, beat mascarpone cheese until smooth.</li>
+        <li>Gently fold the chilled egg mixture into mascarpone, then fold in whipped cream.</li>
+        <li>Combine coffee and coffee liqueur in a shallow dish.</li>
+        <li>Quickly dip ladyfingers into coffee mixture and arrange in a single layer in a dish.</li>
+        <li>Spread half the cream mixture over ladyfingers, then repeat layers.</li>
+        <li>Dust with cocoa powder, cover, and chill for 4–6 hours before serving.</li>
+    </ol>
+
+    <div class="buttons">
+        <button id="startBtn">Start Cooking</button>
+        <button id="nextBtn" disabled>Next Step</button>
+    </div>
+</div>
+
+<script src="script.js"></script>
+
+        </div>
+
+    </div>
+    
+</body>
+</html>

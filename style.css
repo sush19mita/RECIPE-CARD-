@@ -1,0 +1,118 @@
+
+body {
+    font-family: 'Times new roman', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #f3e5d8, #f7f2ec);
+    background-image: "bac";
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+
+.recipe-card {
+    background: url("background_recipecard.jpg") no-repeat center center fixed;;
+    padding: 20px;
+    border-radius: 15px;
+    max-width: 500px;
+    width: 100%;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+    border: 1px solid #e3d5ca;
+    animation: fadeIn 0.7s ease-in-out;
+}
+
+.recipe-title {
+    text-align: center;
+    color: #5a3825;
+    font-family: 'Georgia', serif;
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
+
+
+.recipe-image {
+    width: 75%;
+    border-radius: 12px;
+    margin-bottom: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+
+.prep-info {
+    text-align: center;
+    margin-bottom: 15px;
+    color: #481F01;
+    font-weight: bold;
+}
+
+.progress-bar {
+    width: 100%;
+    background: #e7d3c1;
+    height: 8px;
+    border-radius: 5px;
+    overflow: hidden;
+    margin-top: 8px;
+}
+
+.progress-fill {
+    width: 0%;
+    height: 100%;
+    background: #8b5e3c;
+    transition: width 0.5s ease-in-out;
+}
+
+.toggle-btn,
+#startBtn,
+#nextBtn {
+    background: #8b5e3c;
+    border: none;
+    padding: 10px;
+    color: white;
+    cursor: pointer;
+    margin: 10px 5px;
+    border-radius: 8px;
+    transition: background 0.3s, transform 0.2s;
+    font-size: 0.95rem;
+}
+
+.toggle-btn:hover,
+#startBtn:hover,
+#nextBtn:hover {
+    background: #6e452c;
+    transform: scale(1.05);
+}
+
+
+.ingredients li,
+.steps li {
+    padding: 6px 0;
+    transition: background 0.3s;
+    border-bottom: 1px solid #f0e2d0;
+}
+
+.ingredients li:hover,
+.steps li:hover {
+    background: #fff3e6;
+}
+
+
+.highlight {
+    background: #ffe1b5 !important;
+}
+
+
+.hidden {
+    display: none;
+}
+
+
+@media (max-width: 600px) {
+    .recipe-card {
+        padding: 15px;
+    }
+}
+
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(15px); }
+    to { opacity: 1; transform: translateY(0); }
+}
